@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;           /* Ensures the image doesn't repeat */
+    background-size: cover;                 /* Makes the image cover the entire screen */
+    background-attachment: fixed;           /* Locks the image to the viewport */
+    background-position: center;            /* Centers the image */
+    margin: 0;                              /* Removes default margin */
+    padding: 0;   
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#heading img{
+    width: 120px;
+}
+#container{
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.645);
+    padding: 30px 40px;
+    width: 30%;
+    /* height: 120px; */
+    border-radius: 20px;
+    margin: 30px auto 0;
+    background-color: rgba(115, 72, 243, 0.388);
+}  
+#container #search{
+    width: 480px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    /* position: absolute; */
+}
+#container #search input{
+    border: none;
+    width: 390px;
+    min-height: 50px;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255);
+ 
+
+}
+#container #search input::placeholder{
+    font-size: 20px;
+    padding-left: 5px;
+}
+#container #search div{
+    background-color: white;
+    border: none;
+    height: inherit;outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+#container #search div img{
+    width: 20px;
+    cursor: pointer;
+}
+#container #search button{
+    height: inherit;
+    width: 110px;
+    background: rgb(255, 166, 0);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+    border: none;  
+}
+#container #weather {
+    margin-top: 20px;
+    display: none;
+}
+#container #weather img{
+    width: 200px;
+}
+#container #weather h1{
+    color: white;
+    font-size: 60PX;
+}
+#container #weather h2{
+    color: white;
+    font-size: 40PX;
+}
+#container #details{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    padding: 0 20px;
+}
+#container #details img{
+    width: 70px;
+}
+#container #details #col{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5; 
+}
